@@ -2,14 +2,8 @@ const AWS = require("aws-sdk")
 const { orderBy } = require("lodash")
 
 
-// const s3Credentials = new AWS.Credentials({
-//   accessKeyId: "AKIAU3KZNLVGIT45XUV2",
-//   secretAccessKey: "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",
-// })
-
 const s3 = new AWS.S3({
   region: "ca-central-1",
-  // credentials: s3Credentials,
   apiVersion: '2006-03-01', signatureVersion: 'v4'
 })
 
